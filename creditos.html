@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="tema-escuro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            var r = document.documentElement;
+            r.classList.add('tema-escuro', 'js-reveal');
+            try { if (localStorage.getItem('uy-tema') === 'claro') r.classList.remove('tema-escuro'); } catch (e) {}
+            // Plano B: se o scroll-reveal.js não carregar, nada fica escondido.
+            setTimeout(function () { if (!window.__uyReveal) r.classList.remove('js-reveal'); }, 3000);
+        })();
+    </script>
+    <meta name="description" content="Créditos de imagens, ícones, fontes e serviços utilizados no site da Updated Yesterday.">
+    <meta name="theme-color" content="#2B231D">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Créditos — Updated Yesterday">
+    <meta property="og:description" content="Créditos de imagens, ícones, fontes e serviços utilizados no site da Updated Yesterday.">
+    <meta property="og:image" content="Imagens/logotipo.png">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Créditos — Updated Yesterday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Serif+4:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Imagens/logotipo.png">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+<header class="cabecalho">
+        <a href="index.html" class="conteiner-logo">
+            <img src="Imagens/logotipo.png" alt="Logo Updated Yesterday" class="imagem-logo">
+            <div class="textos-logo">
+                <span class="titulo-logo">UPDATED YESTERDAY</span>
+            </div>
+        </a>
+
+        <nav class="navegacao">
+            <ul class="lista-menu">
+                <li><a href="index.html#funcionalidades" class="link-direto">Funcionalidades</a></li>
+                <li class="item-submenu">
+                    <button type="button" class="link-submenu" aria-haspopup="true" aria-expanded="false">Sumário <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <ul class="submenu"><li><a href="index.html#hero">Início</a></li><li><a href="index.html#problema">O problema</a></li><li><a href="index.html#sistema">O sistema</a></li><li><a href="index.html#como-funciona">Como funciona</a></li><li><a href="index.html#funcionalidades">Funcionalidades</a></li><li><a href="index.html#mr-harley">Mr.Harley</a></li><li><a href="index.html#integrado">Tudo integrado</a></li><li><a href="index.html#escolher">Por que escolher a UY</a></li><li><a href="index.html#pioneiros">Clientes pioneiros</a></li><li><a href="index.html#faq">Perguntas frequentes</a></li><li><a href="index.html#solicitar-teste">Solicitar teste</a></li><li><a href="#rodape">Contato</a></li></ul>
+                </li>
+                <li class="item-submenu item-submenu-seg">
+                    <a href="segmentos.html" class="link-submenu link-submenu-seg" aria-haspopup="true">Segmentos <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                    <ul class="submenu"><li><a href="segmentos.html#seg-industria">Indústria e manufatura</a></li><li><a href="segmentos.html#seg-logistica">Logística e transportes</a></li><li><a href="segmentos.html#seg-mineracao">Mineração e siderurgia</a></li><li><a href="segmentos.html#seg-agro">Agroindústria e alimentos</a></li><li><a href="segmentos.html#seg-energia">Energia e utilidades</a></li><li><a href="segmentos.html#seg-facilities">Facilities e predial</a></li></ul>
+                </li>
+                <li class="item-submenu">
+                    <button type="button" class="link-submenu" aria-haspopup="true" aria-expanded="false">Explorar <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <ul class="submenu"><li><a href="sobre-nos.html">Sobre Nós<small>Quem somos, objetivo e equipe</small></a></li><li><a href="blog.html">Blog<small>Artigos, novidades e boas práticas</small></a></li></ul>
+                </li>
+                <li><a href="#rodape" class="link-direto">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="conteiner-botao">
+            <a href="solicitar-orçamento.html" class="botao-acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                Solicitar teste grátis
+            </a>
+        </div>
+
+
+        <button class="btn-tema" id="btn-tema" type="button" aria-label="Ativar modo claro" aria-pressed="true">
+            <svg class="icone-sol" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="12" y1="2" x2="12" y2="4"></line>
+                <line x1="12" y1="20" x2="12" y2="22"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="2" y1="12" x2="4" y2="12"></line>
+                <line x1="20" y1="12" x2="22" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icone-lua" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+
+        <button class="btn-hamburguer" id="btn-hamburguer" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+            <span class="linha-hamburguer"></span>
+            <span class="linha-hamburguer"></span>
+            <span class="linha-hamburguer"></span>
+        </button>
+    </header>
+
+    <!-- MENU MOBILE (HAMBÚRGUER) -->
+    <div class="overlay-menu-mobile" id="overlay-menu-mobile"></div>
+    <nav class="menu-mobile" id="menu-mobile" aria-hidden="true">
+        <ul class="lista-menu-mobile">
+            <li><a href="index.html#funcionalidades" class="link-menu-mobile">Funcionalidades</a></li>
+            <li><a href="#rodape" class="link-menu-mobile">Contato</a></li>
+            <li class="item-submenu-mobile">
+                <button type="button" class="link-menu-mobile btn-submenu-mobile" aria-expanded="false">Sumário <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                <ul class="submenu-mobile"><li><a href="index.html#hero">Início</a></li><li><a href="index.html#problema">O problema</a></li><li><a href="index.html#sistema">O sistema</a></li><li><a href="index.html#como-funciona">Como funciona</a></li><li><a href="index.html#funcionalidades">Funcionalidades</a></li><li><a href="index.html#mr-harley">Mr.Harley</a></li><li><a href="index.html#integrado">Tudo integrado</a></li><li><a href="index.html#escolher">Por que escolher a UY</a></li><li><a href="index.html#pioneiros">Clientes pioneiros</a></li><li><a href="index.html#faq">Perguntas frequentes</a></li><li><a href="index.html#solicitar-teste">Solicitar teste</a></li><li><a href="#rodape">Contato</a></li></ul>
+            </li>
+            <li class="item-submenu-mobile">
+                <button type="button" class="link-menu-mobile btn-submenu-mobile" aria-expanded="false">Segmentos <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                <ul class="submenu-mobile"><li><a href="segmentos.html">Ver todos os segmentos</a></li><li><a href="segmentos.html#seg-industria">Indústria e manufatura</a></li><li><a href="segmentos.html#seg-logistica">Logística e transportes</a></li><li><a href="segmentos.html#seg-mineracao">Mineração e siderurgia</a></li><li><a href="segmentos.html#seg-agro">Agroindústria e alimentos</a></li><li><a href="segmentos.html#seg-energia">Energia e utilidades</a></li><li><a href="segmentos.html#seg-facilities">Facilities e predial</a></li></ul>
+            </li>
+            <li class="item-submenu-mobile">
+                <button type="button" class="link-menu-mobile btn-submenu-mobile" aria-expanded="false">Explorar <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                <ul class="submenu-mobile"><li><a href="sobre-nos.html">Sobre Nós</a></li><li><a href="blog.html">Blog</a></li></ul>
+            </li>
+        </ul>
+        <a href="solicitar-orçamento.html" class="botao-acao botao-acao-mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            Solicitar teste grátis
+        </a>
+    </nav>
+
+    <main id="conteudo-principal">
+    <button class="link-voltar-pagina" onclick="history.back()" type="button">
+        ← Voltar
+    </button>
+
+    <section class="creditos-section" id="creditosfinais">
+      <div class="creditos-header revelar-cima">
+        <div class="creditos-header-content">
+          <span class="creditos-tag">CRÉDITOS</span>
+          <h2 class="creditos-titulo">Reconhecemos quem inspira e contribui.</h2>
+          <p class="creditos-subtitulo">
+            Aqui estão os créditos das imagens, ícones e recursos utilizados neste projeto, além dos serviços que mantêm o site no ar. Agradecemos aos criadores pelo excelente trabalho.
+          </p>
+        </div>
+        <div class="creditos-header-ilustracao">
+          <img src="Imagens/créditos.png" alt="Ilustração de Créditos" />
+        </div>
+      </div>
+
+      <!-- ÍCONES (ordem alfabética) -->
+      <div class="creditos-grid revelar-cascata">
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/aceitar.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Aceitar</h3>
+            <span class="credito-fonte">Aldo Cervantes</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/aceitar_2550214?term=positivo&page=1&position=4&origin=search&related_id=2550214" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/agenda.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Agenda</h3>
+            <span class="credito-fonte">Tanah Basah</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/agenda_8740776?term=agenda&page=1&position=4&origin=search&related_id=8740776" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/alvo-com-flecha.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Alvo com flecha</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/arquivos.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Arquivos</h3>
+            <span class="credito-fonte">Eucalyp</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/banco-de-dados-em-nuvem_2637294?term=banco+de+dados&related_id=2637294" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/grafico.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Aumentar</h3>
+            <span class="credito-fonte">Adrian Coquet</span>
+            <a href="https://www.flaticon.com" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/bolha-de-bate-papo.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Bate-papo</h3>
+            <span class="credito-fonte">BomSymbols</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/falando_2594058?term=bal%C3%A3o+de+fala&page=1&position=10&origin=search&related_id=2594058" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/cadeado.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Cadeado</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/cadeado_2575570?term=cadeado&page=1&position=8&origin=search&related_id=2575570" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/cerebro.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Cérebro</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/cerebro_170082?term=cerebro&page=1&position=44&origin=search&related_id=170082" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/coracao.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Coração</h3>
+            <span class="credito-fonte">Vlad Szirka</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/coracao_2589197?term=cora%C3%A7%C3%A3o&page=1&position=6&origin=search&related_id=2589197" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/correspondencia.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Correspondência</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/correspondencia_6011093?term=cartas&page=1&position=2&origin=search&related_id=6011093" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/do-utilizador.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Do utilizador</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/do-utilizador_1077063?term=pessoas&page=1&position=4&origin=search&related_id=1077063" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/duaspessoas-creme.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Dois usuários</h3>
+            <span class="credito-fonte">Becris</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/comercial_860800?term=pessoas&page=1&position=56&origin=search&related_id=860800" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/dolar.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Dólar</h3>
+            <span class="credito-fonte">Nendra Wahyu</span>
+            <a href="https://www.flaticon.com" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/configuracao.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Engrenagem</h3>
+            <span class="credito-fonte">Iilhan Fitrotul Hayat</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/configuracao_2956788?term=configura%C3%A7%C3%A3o&page=1&position=6&origin=search&related_id=2956788" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/entrega-rapida.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Entrega rápida</h3>
+            <span class="credito-fonte">Uniconlabs</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/entrega-rapida_5470304?term=caminh%C3%A3o&page=1&position=26&origin=search&related_id=5470304" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/escudo.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Escudo</h3>
+            <span class="credito-fonte">alfanz</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/seguro_8227009?term=seguran%C3%A7a&page=1&position=9&origin=search&related_id=8227009" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/estrela.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Estrela</h3>
+            <span class="credito-fonte">Gregor Cresnar</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/estrela_126482?term=estrela&page=1&position=1&origin=search&related_id=126482" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/facebook.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Facebook</h3>
+            <span class="credito-fonte">NajmunNahar</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/facebook_3128208?term=facebook&page=1&position=5&origin=search&related_id=3128208" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/falando.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Falando</h3>
+            <span class="credito-fonte">Storyset</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/falando_2594058?term=bal%C3%A3o+de+fala&page=1&position=10&origin=search&related_id=2594058" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/ferramentas.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Ferramentas</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/ferramentas_1077198?term=ferramentas&page=1&position=1&origin=search&related_id=1077198" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/foguete.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Foguete</h3>
+            <span class="credito-fonte">Rikas Dzihab</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/startup_8468302?term=foguete&page=1&position=39&origin=search&related_id=8468302" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/globo.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Globo</h3>
+            <span class="credito-fonte">Uniconlabs</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/globo_3870936?term=globo&page=1&position=3&origin=search&related_id=3870936" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/grafico-de-barras.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Gráfico de barras</h3>
+            <span class="credito-fonte">Andy Horvath</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/grafico-de-barras_4279509?term=grafico&page=1&position=27&origin=search&related_id=4279509" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/grafico-de-perdas.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Gráfico de perdas</h3>
+            <span class="credito-fonte">Storyset</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/grafico-de-perdas_15916677?term=grafico+descendo&related_id=15916677" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/historia.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Histórico</h3>
+            <span class="credito-fonte">Soni Sokeli</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/historia_6888510?term=historico&page=1&position=5&origin=search&related_id=6888510" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/instagram.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Instagram</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/instagram_1384031?term=instagram&page=1&position=4&origin=search&related_id=1384031" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/ideia-criativa.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Lâmpada</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/ideia-criativa_1819990?term=lampada&page=1&position=13&origin=search&related_id=1819990" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/linkedin.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">LinkedIn</h3>
+            <span class="credito-fonte">riajulislan</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/linkedin_3536569?term=linkedin&page=1&position=10&origin=search&related_id=3536569" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/lista.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Lista</h3>
+            <span class="credito-fonte">Storyset</span>
+            <a href="https://storyset.com" target="_blank" rel="noopener noreferrer" class="credito-link">Storyset <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/lupa.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Lupa</h3>
+            <span class="credito-fonte">Ayub Irawan</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/lupa_2311526?term=lupa&page=1&position=3&origin=search&related_id=2311526" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/marca-paginas.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Marca-páginas</h3>
+            <span class="credito-fonte">Yuan Design</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/marca-paginas_5186087?term=salvar&page=1&position=5&origin=search&related_id=5186087" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/olho.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Olho</h3>
+            <span class="credito-fonte">Gregor Cresnar</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/olho_158746?term=olho&page=1&position=4&origin=search&related_id=158746" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/parceria.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Parceria</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/handshake-de-parceria_2665080?term=parceria&page=1&position=11&origin=search&related_id=2665080" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/preventivo.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Preventiva</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-escuros/relogio.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Relógio</h3>
+            <span class="credito-fonte">apien</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/relogio_4024449?term=relogio&page=1&position=24&origin=search&related_id=4024449" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/robo.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Robô</h3>
+            <span class="credito-fonte">Bharat Icons</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/robo_7220142?term=robo&page=1&position=13&origin=search&related_id=7220142" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone">
+            <img src="Icones/icones-claros/whatsapp.png" alt="" loading="lazy" />
+          </div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">WhatsApp</h3>
+            <span class="credito-fonte">Magnific</span>
+            <a href="https://www.flaticon.com/br/icone-gratis/whatsapp_154858?term=whatsapp&page=1&position=2&origin=search&related_id=154858" target="_blank" rel="noopener noreferrer" class="credito-link">Flaticon <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVIÇOS, FONTES E TECNOLOGIAS -->
+      <div class="creditos-subtitulo-bloco revelar-cima">
+        <span class="creditos-tag">SERVIÇOS, FONTES E TECNOLOGIAS</span>
+        <p class="creditos-subtitulo">O site funciona graças a estes serviços, fontes e recursos de código aberto.</p>
+      </div>
+
+      <div class="creditos-grid creditos-grid--servicos revelar-cascata">
+        <div class="credito-card">
+          <div class="credito-icone"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--cor-destaque-dourado)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 22 20H2z"/></svg></div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Vercel</h3>
+            <span class="credito-fonte">Hospedagem do site</span>
+            <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" class="credito-link">vercel.com <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--cor-destaque-dourado)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Formspree</h3>
+            <span class="credito-fonte">Recebimento dos formulários</span>
+            <a href="https://formspree.io" target="_blank" rel="noopener noreferrer" class="credito-link">formspree.io <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone"><span class="credito-glifo" aria-hidden="true">Aa</span></div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Fraunces</h3>
+            <span class="credito-fonte">Fonte dos títulos · Undercase Type · Licença SIL OFL</span>
+            <a href="https://fonts.google.com/specimen/Fraunces" target="_blank" rel="noopener noreferrer" class="credito-link">Google Fonts <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="credito-card">
+          <div class="credito-icone"><span class="credito-glifo" aria-hidden="true">Aa</span></div>
+          <div class="credito-info">
+            <h3 class="credito-item-titulo">Source Serif 4</h3>
+            <span class="credito-fonte">Fonte dos textos · Adobe (Frank Grießhammer) · Licença SIL OFL</span>
+            <a href="https://fonts.google.com/specimen/Source+Serif+4" target="_blank" rel="noopener noreferrer" class="credito-link">Google Fonts <span class="icon-external" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="creditos-aviso revelar">
+        <span class="aviso-icone">ℹ</span>
+        <p>Se você é o autor de algum recurso utilizado aqui e deseja solicitar a remoção ou alteração dos créditos, entre em contato conosco.</p>
+      </div>
+    </section>
+  </main>
+
+        <!-- RODAPÉ -->
+        <footer class="footer" id="rodape">
+            <div class="footer-container">
+            
+            <!-- GRID SUPERIOR (5 COLUNAS) -->
+            <div class="footer-top revelar-cascata">
+                
+                <!-- COLUNA 1: LOGO E DESCRIÇÃO -->
+                <div class="footer-col col-brand">
+                <div class="brand-header">
+                    <!-- Espaço reservado para a LOGO ao lado do texto -->
+                    <div class="logo-placeholder">
+                    <img src="Imagens/logotipo.png" alt="Logo Updated Yesterday">
+                    </div>
+                    <div class="brand-title">
+                    <h2>UPDATED YESTERDAY</h2>
+                            <p class="subtitle">Nós não dependemos de sorte.</p>
+                    </div>
+                </div>
+
+                <p class="brand-description">
+                    Soluções inteligentes para gestão de manutenção e operações.<br>
+                    Tecnologia, eficiência e conexão para o seu negócio.
+                </p>
+
+                <div class="social-section">
+                    <h4 class="section-title">REDES SOCIAIS</h4>
+                    <div class="social-links">
+                    <a href="https://www.instagram.com/p/DcltIoWEeUV/?igsi=NTBnZ2xrN2NycWJ2" title="Instagram"><img src="Icones/icones-claros/instagram.png" alt="" class="sociais-img"></a>
+                    <a href="https://www.linkedin.com/company/updated-yesterday/posts/?viewAsMember=true" title="LinkedIn"><img src="Icones/icones-claros/linkedin.png" alt="" class="sociais-img"></a>
+                    <a href="https://www.facebook.com/share/1K7FVFRbi6/" title="Facebook"><img src="Icones/icones-claros/facebook.png" alt="" class="sociais-img"></a>
+                    <a href="https://wa.me/message/VCNQYGT4VERDC1" title="WhatsApp"><img src="Icones/icones-claros/whatsapp.png" alt="" class="sociais-img"></a>
+                    </div>
+                </div>
+                </div>
+
+                <!-- COLUNA 2: NAVEGAÇÃO -->
+                <div class="footer-col">
+                <h4 class="section-title">NAVEGAÇÃO</h4>
+                <ul class="footer-list">
+                    <li><a href="index.html#hero">Início</a></li>
+                    <li><a href="sobre-nos.html">Sobre nós</a></li>
+                    <li><a href="sobre-nos.html#objetivo">Nosso objetivo</a></li>
+                    <li><a href="segmentos.html">Segmentos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="index.html#mr-harley">Mr.Harley</a></li>
+                    <li><a href="index.html#escolher">Motivos para escolher</a></li>
+                    <li><a href="#rodape">Contato</a></li>
+                </ul>
+                </div>
+
+                <!-- COLUNA 3: FUNCIONALIDADES -->
+                <div class="footer-col">
+                <h4 class="section-title">FUNCIONALIDADES</h4>
+                <ul class="footer-list">
+                    <li><a href="index.html#fn-preventiva">Preventiva</a></li>
+                    <li><a href="index.html#fn-chamados">Chamados</a></li>
+                    <li><a href="index.html#fn-agenda">Agenda de manutenção</a></li>
+                    <li><a href="index.html#fn-ia">Chat Box com IA</a></li>
+                    <li><a href="index.html#fn-historico">Histórico de manutenção</a></li>
+                    <li><a href="index.html#fn-indicadores">Indicadores</a></li>
+                    <li><a href="index.html#fn-logistica">Integração de logística</a></li>
+                </ul>
+                </div>
+
+                <!-- COLUNA 4: CONTATO -->
+                <div class="footer-col">
+                <h4 class="section-title">CONTATO</h4>
+                <ul class="contact-list">
+                    <li>
+                    <span class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><polyline points="22,6 12,13 2,6"></polyline></svg></span>
+                    <a href="mailto:updatedyesterday26@gmail.com">updatedyesterday26@gmail.com</a>
+                    </li>
+                    <li>
+                    <span class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+                    <span>(51) 993928030</span>
+                    </li>
+                  
+
+                </ul>
+                </div>
+
+                <!-- COLUNA 5: INFORMAÇÕES -->
+                <div class="footer-col">
+                <h4 class="section-title">INFORMAÇÕES</h4>
+                <ul class="footer-list">
+                    <li><a href="creditos.html">Créditos</a></li>
+                    <li><a href="politica-de-provacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+                </ul>
+                </div>
+
+            </div>
+
+<!-- SEÇÃO NEWSLETTER -->
+<div class="sib-form" style="text-align: left; width: 100%;">
+  <div id="sib-form-container" class="sib-form-container" style="background: transparent; padding: 0;">
+    
+    <!-- Mensagem de erro customizada (oculta por padrão) -->
+    <div id="error-message" class="sib-form-message-panel" style="display: none; font-family: inherit; font-size: 14px; text-align: left; color: #d4a359; background-color: rgba(0, 0, 0, 0.4); border: 1px solid rgba(212, 163, 89, 0.5); border-radius: 8px; max-width: 100%; margin-bottom: 12px; padding: 12px 16px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center" style="display: flex; align-items: center; gap: 8px; color: #d4a359;">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon" style="fill: #d4a359; width: 18px; height: 18px; flex-shrink: 0;">
+          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+        </svg>
+        <span class="sib-form-message-panel__inner-text" style="color: #d4a359;">
+          Sua assinatura não pôde ser enviada. Tente novamente.
+        </span>
+      </div>
+    </div>
+    
+    <!-- Mensagem de sucesso (oculta por padrão) -->
+    <div id="success-message" class="sib-form-message-panel" style="display: none; font-family: inherit; font-size: 14px; text-align: left; color: #13ce66; background-color: rgba(0, 0, 0, 0.4); border: 1px solid #13ce66; border-radius: 8px; max-width: 100%; margin-bottom: 12px; padding: 12px 16px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center" style="display: flex; align-items: center; gap: 8px;">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon" style="fill: #13ce66; width: 18px; height: 18px; flex-shrink: 0;">
+          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+        </svg>
+        <span class="sib-form-message-panel__inner-text">
+          Você fez sua assinatura com sucesso.
+        </span>
+      </div>
+    </div>
+
+    <!-- Card Principal -->
+    <div id="sib-container" class="nl-card sib-container--large sib-container--vertical">
+      <form id="sib-form" class="nl-form" method="POST" action="https://formspree.io/f/xgaoywdn">
+
+        <!-- Ícone + Textos -->
+        <div class="nl-info">
+          <div class="nl-icone">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4a359" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="nl-textos">
+            <p class="nl-titulo">Newsletter</p>
+            <p class="nl-subtitulo">Assine nossa newsletter e mantenha-se atualizado.</p>
+          </div>
+        </div>
+
+        <!-- Campo de e-mail + botão -->
+        <div class="nl-campo-grupo">
+          <div class="nl-campo">
+            <label for="EMAIL" class="nl-sr-only">Seu e-mail</label>
+            <input class="nl-input" type="email" id="EMAIL" name="email" autocomplete="email" placeholder="Seu melhor e-mail" required />
+            <button class="nl-botao" type="submit">
+              ASSINAR <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Texto de segurança -->
+        <p class="nl-nota">Seus dados estão protegidos com segurança e privacidade.</p>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- DIVISOR COM DETALHE FLOREADO DA IMAGEM -->
+<div class="footer-divider">
+    <span class="divider-ornament">❖</span>
+</div>
+
+<!-- RODAPÉ INFERIOR (COPYRIGHT E CRÉDITOS) -->
+<div class="footer-bottom">
+    <p class="copyright">
+    © 2026 Updated yesterday.<br>
+    Todos os direitos reservados.
+    </p>
+    <div class="footer-tagline">
+    <span class="heart-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+    <p>Feito com propósito para manter tudo funcionando.</p>
+    </div>
+</div>
+
+            </div>
+        </footer>
+
+<a class="wa-flutuante" href="https://wa.me/message/VCNQYGT4VERDC1" target="_blank" rel="noopener" aria-label="Entrar em contato pelo WhatsApp">
+    <span class="wa-dica">Entrar em contato</span>
+    <img src="Icones/icones-claros/whatsapp.png" alt="">
+</a>
+
+<script src="submenu.js"></script>
+<script src="newsletter.js"></script>
+<script src="scroll-reveal.js"></script>
+</body>
+</html>
